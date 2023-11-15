@@ -1,0 +1,66 @@
+print("Hello! Are you planning on buying a car? Let's calculate your monthly car note!")
+
+username = input("What is your name?: ")
+print("Buyer: ", username)
+
+print(f'Hello {username}! What car are you interested in? Please input the following below.\n')
+car_make = input("Car make: ")
+car_model = input("Car model: ")
+car_year = int(input("Car year: "))
+               
+car_info = [car_make, car_model, car_year]
+
+print(f'The car you are interested is: {car_year}, {car_make} - {car_model}')
+print()
+print()
+
+print("  Now let's calculate your payments!\n")
+
+# loantype
+
+loan_type = input("How would you like to pay your loan? [yearly or monthly]: ")
+
+if loan_type == 'yearly':
+    payments = int(input("How many years would you like your loan to be?: "))
+    monthly = byyear * 12
+    print(f' Your loan time length is {monthly} months.\n')
+else:
+    payments = int(input("How many months would you like your loan to be?: "))
+    monthly = payments
+    byyear = monthly/12
+    print(f' Your loan time length is {monthly} months or {byyear} years.\n')
+    
+# calculate price and apr
+
+car_price = float(input('What is the price of the car?:\n '))
+print(' > Amount financed:', f'{car_price:.2f}')
+APR = float(input('What is the Annual Percentage Rate or APR offered to you?: '))
+fin_charge = (APR/100) * car_price #something here is wrong w the apr and monthly pay 
+
+print(' > Finance charge per year:', f'{fin_charge:.2f}', 'dollars')
+
+total_fin_charge = (monthly/12) * fin_charge
+
+print(' > Total Finance charge for loan term:', f'{total_fin_charge:.2f}')
+print()
+totalofpayments = car_price + total_fin_charge
+
+# downpayment
+
+down_payment = input('Will you be giving a down payment for this car?: (Y/N) ')
+if down_payment == 'N':
+    print('OK!')
+else:
+    down_amount = float(input('What amount?: '))
+
+# sale price
+
+total_sale_price = totalofpayments + down_amount
+print(f' >> The total sale price of the car is', f'{total_sale_price:.2f}')
+print(f' > Total price to pay is', f'{totalofpayments:.2f}\n')
+
+# monthly calculation
+
+monthly_payment = totalofpayments/72
+print('Therefore your monthly payment will be:', f'{monthly_payment:.2f}')
+
