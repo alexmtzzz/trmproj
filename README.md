@@ -41,7 +41,7 @@ the program then takes those inputs into account and begins the calculation for:
 
 > The interest is provided by itself to allow the buyer to view if the interest is high or a good option for them. With this, the buyer can also decide if to increase their loan term or decrease the time, and although their interest rate may also change, the buyer is fully aware of the interest expected to be paid. 
 
-> Head to `formula` to view the formula we are working with
+Head to `formula` to view the formula we are working with
 
 Finally, the calculation is done and the total cost of the loan is divided by the desired loan length that the user input, giving them their final monthly payment.
 
