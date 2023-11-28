@@ -21,6 +21,7 @@ This is a direct link to the website: https://www.python.org/
 > Please make sure to download Python (version 3.11) for your appropriate operating system. (IOS/Windows)
 
 ### Pseudocode 
-The following is the pseudocode for the program. It details the inputs and outputs that the program 
+Head to `pseudocode.md` to view the pseudocode for this program
+The following details the inputs and outputs that the program offers
 
 
