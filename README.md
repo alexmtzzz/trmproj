@@ -23,7 +23,7 @@ This is a direct link to the website: https://www.python.org/
 > Please make sure to download Python (version 3.11) for your appropriate operating system. (IOS/Windows)
 
 ### Pseudocode 
-Head to `pseudocode.md` to view the pseudocode for this program
+Head to `pseudocode` to view the pseudocode for this program
 The following details the inputs and outputs that the program offers
 
 ### Program Details
@@ -41,6 +41,7 @@ the program then takes those inputs into account and begins the calculation for:
 
 > The interest is provided by itself to allow the buyer to view if the interest is high or a good option for them. With this, the buyer can also decided if to increse their loan term or decrease the time, and although their interest rate may also change, the buyer is fully aware of the interests expected to be paid. 
 
+> Head to `formula` to view the formula we are working with
 Finally the calculation is done and the total cost of the loan is divided by the desired loan length that the user input, giving them their final monthly payment.
 
 ### Future Improvements or Updates
