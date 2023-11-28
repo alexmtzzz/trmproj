@@ -45,7 +45,7 @@ Head to `formula` to view the formula we are working with
 
 Finally, the calculation is done and the total cost of the loan is divided by the desired loan length that the user input, giving them their final monthly payment.
 
-Head to `flowchart` to view the flowchart for this program. 
+Head to `Nov28flowchart.drawio.pdf` to view the flowchart for this program. 
 
 ### Future Improvements or Updates
 Although I like the quick and simple way the program offers the monthly payment for the user as well as their total loan cost, I hope that in this program I can add more things such as:
