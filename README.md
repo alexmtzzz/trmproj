@@ -49,3 +49,7 @@ Although I like the quick and simple way the program offers the monthly payment 
 * Compare prices amongst cars input to program and select best option 
 * Select and provide best option by desired amount/budget 
 
+#### Refences: 
+> * https://www.youtube.com/watch?v=p8f8XP2tmvE&ab_channel=TheOrganicChemistryTutor
+> *  https://www.youtube.com/watch?v=NCYNXkbTTUo&ab_channel=TheOrganicChemistryTutor
+> *  https://www.youtube.com/watch?v=sl5D2JCPpcY&ab_channel=TheOrganicChemistryTutor
