@@ -1,66 +1,61 @@
-print("Hello! Are you planning on buying a car? Let's calculate your monthly car note!")
+#introduction
+print("Print car_note() to start")
+def car_note():
 
-username = input("What is your name?: ")
-print("Buyer: ", username)
+    print()
+    print('Welcome! Today we will be calculating your monthly payments on your future car.')
+    name = input('First, what is your name?: ')
+    print(f'Hi {name}!')
+    print()
 
-print(f'Hello {username}! What car are you interested in? Please input the following below.\n')
-car_make = input("Car make: ")
-car_model = input("Car model: ")
-car_year = int(input("Car year: "))
-               
-car_info = [car_make, car_model, car_year]
+    #car details
+    while True:
+        print('Input the following details of your car of interest.')
+        print()
+        
+        car_make = input('Car make: ')
+        car_model = input('Car model: ')
+        car_year = float(input('Car year: '))
+        print()
 
-print(f'The car you are interested is: {car_year}, {car_make} - {car_model}')
-print()
-print()
+    #loan details
+        loan_length = int(input('How many months would you like your loan to be?: '))
+        loan_length_years = loan_length / 12
+        print(f'Your loan will be {loan_length_years:.02f} years or {loan_length} months. ')
+        print()
 
-print("  Now let's calculate your payments!\n")
+    #car price
+        principal = float(input('What is the price of the car?: '))
+        #principal_tax = (principal * 0.08)
+        #total_principal = principal + principal_tax #tax
+        
+        rate = float(input('What is the APR % offered to you?: '))
+        print()
+        
+        rate_int = rate / 100 #as percentage
+        n = 12
+        t = loan_length / 12
+        nt = n * t
 
-# loantype
+    #calculation
+        mp1 = (principal * (rate_int / 12)) 
+        mp2 = (1 - (1 + (rate_int / 12)) ** (-1 * (n*t)))
+        #mp3 = mp2 ** (- (n * t))
+        mp_fin = mp1 / mp2 #2-3
 
-loan_type = input("How would you like to pay your loan? [yearly or monthly]: ")
+    #loan charges
+        total_cost_loan = mp_fin * nt
+        print(f'The total cost of loan is: {total_cost_loan:.02f}')
 
-if loan_type == 'yearly':
-    payments = int(input("How many years would you like your loan to be?: "))
-    monthly = byyear * 12
-    print(f' Your loan time length is {monthly} months.\n')
-else:
-    payments = int(input("How many months would you like your loan to be?: "))
-    monthly = payments
-    byyear = monthly/12
-    print(f' Your loan time length is {monthly} months or {byyear} years.\n')
-    
-# calculate price and apr
+        total_interest_paid = total_cost_loan - principal #
+        print(f'The total interest paid on this loan is: {total_interest_paid:.02f} \n')
+        
+        print(f'Your monthly payment will be about: {mp_fin:.02f} dollars.')
 
-car_price = float(input('What is the price of the car?:\n '))
-print(' > Amount financed:', f'{car_price:.2f}')
-APR = float(input('What is the Annual Percentage Rate or APR offered to you?: '))
-fin_charge = (APR/100) * car_price #something here is wrong w the apr and monthly pay 
+        print('-' * 50)
 
-print(' > Finance charge per year:', f'{fin_charge:.2f}', 'dollars')
+    else:
+        print('Please enter a name')
+        name = input('What is your name?: ')
 
-total_fin_charge = (monthly/12) * fin_charge
-
-print(' > Total Finance charge for loan term:', f'{total_fin_charge:.2f}')
-print()
-totalofpayments = car_price + total_fin_charge
-
-# downpayment
-
-down_payment = input('Will you be giving a down payment for this car?: (Y/N) ')
-if down_payment == 'N':
-    print('OK!')
-else:
-    down_amount = float(input('What amount?: '))
-
-# sale price
-
-total_sale_price = totalofpayments + down_amount
-print(f' >> The total sale price of the car is', f'{total_sale_price:.2f}')
-print(f' > Total price to pay is', f'{totalofpayments:.2f}\n')
-
-# monthly calculation
-
-monthly_payment = totalofpayments/72
-print('Therefore your monthly payment will be:', f'{monthly_payment:.2f}')
 
