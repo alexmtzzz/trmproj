@@ -39,18 +39,19 @@ the program then takes those inputs into account and begins the calculation for:
 * the total cost of the loan
 * the interest the buyer should expect to pay over the loan term 
 
-> The interest is provided by itself to allow the buyer to view if the interest is high or a good option for them. With this, the buyer can also decided if to increse their loan term or decrease the time, and although their interest rate may also change, the buyer is fully aware of the interests expected to be paid. 
+> The interest is provided by itself to allow the buyer to view if the interest is high or a good option for them. With this, the buyer can also decide if to increase their loan term or decrease the time, and although their interest rate may also change, the buyer is fully aware of the interest expected to be paid. 
 
 > Head to `formula` to view the formula we are working with
-Finally the calculation is done and the total cost of the loan is divided by the desired loan length that the user input, giving them their final monthly payment.
+
+Finally, the calculation is done and the total cost of the loan is divided by the desired loan length that the user input, giving them their final monthly payment.
 
 ### Future Improvements or Updates
 Although I like the quick and simple way the program offers the monthly payment for the user as well as their total loan cost, I hope that in this program I can add more things such as:
 * Provide users with tables that include  information regarding their cars and payments
-* Compare prices amongst cars input to program and select best option 
-* Select and provide best option by desired amount/budget 
+* Compare prices amongst cars input to the program and select the best option 
+* Select and provide the best option by desired amount/budget 
 
-#### Refences: 
+#### References: 
 > * https://www.youtube.com/watch?v=p8f8XP2tmvE&ab_channel=TheOrganicChemistryTutor
 > *  https://www.youtube.com/watch?v=NCYNXkbTTUo&ab_channel=TheOrganicChemistryTutor
 > *  https://www.youtube.com/watch?v=sl5D2JCPpcY&ab_channel=TheOrganicChemistryTutor
